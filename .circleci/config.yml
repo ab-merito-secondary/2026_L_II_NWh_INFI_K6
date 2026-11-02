@@ -31,7 +31,7 @@ jobs:
           # Makefile łączy komendy przez ';', więc nieudany push nie przerywa joba.
           # Ten krok gwarantuje, że obraz z tagiem SHA naprawdę istnieje.
           command: docker manifest inspect ${IMAGE}:${CIRCLE_SHA1} > /dev/null
-deploy:
+  deploy:
     docker:
       - image: mcr.microsoft.com/azure-cli:latest
     environment:
