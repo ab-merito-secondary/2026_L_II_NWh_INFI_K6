@@ -7,8 +7,6 @@ jobs:
       docker_layer_caching: true
     environment:
       IMAGE: aleksanderbuczek/hello-world-printer
-    environment:
-      IMAGE: aleksanderbuczek/hello-world-printer
     steps:
       - checkout
       - run: 
