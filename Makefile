@@ -14,7 +14,7 @@ docker_run: docker_build
 	docker run \
 	--name hello-world-printer-dev \
 		-p 5000:5000 \
-		-d hello-world-printer-k6-2026
+		-d hello-world-printer
 TAG=$(USERNAME)/hello-world-printer:$(TAGNAME)
 docker_push: docker_build
 	@set -e; \
